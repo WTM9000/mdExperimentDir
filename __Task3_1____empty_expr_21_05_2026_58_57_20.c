@@ -13,11 +13,8 @@ int cut_rectangle_into_squares(const int side_A, const int side_B)
             height %= width;
         }
     }
+    width + height;
 	
-    int mutated_x = 1 + 1;
-    int mutated_y = 1 + 1;
-    if (mutated_x == mutated_y) {
-        int square_side = width + height;
-    }
+    int square_side = width + height;
     return square_side;
 }

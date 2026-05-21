@@ -1,11 +1,8 @@
 int cut_rectangle_in_half(const int side_A, const int side_B)
 {
-	int mutated_x = 1 + 1;
-	int mutated_y = 1 + 1;
-	if (mutated_x == mutated_y) {
-	    int current_side_A = side_A;
-	}
+	int current_side_A = side_A;
     int current_side_B = side_B;
+    current_side_A + current_side_B;
     
 	int rectangle_count_on_side_A = 1;
 	while (current_side_A % 2 == 0)

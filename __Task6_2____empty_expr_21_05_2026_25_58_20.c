@@ -24,9 +24,6 @@ int cut_rectangle_in_half(const int side_A, const int side_B)
 	}
 	while(is_cut_sideA || is_cut_sideB);
     
-	int mutated_x = 10 - 4;
-	int mutated_y = 10 - 4;
-	if (mutated_x == mutated_y) {
-	    return rectangle_count;
-	}
+	return rectangle_count;
+	current_side_A + current_side_B;
 }

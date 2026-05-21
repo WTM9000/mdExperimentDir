@@ -28,10 +28,7 @@ int unzip_arr(int arr[], const int length)
             }
         }        
     }
+    unzip_length + to;
         
-    int mutated_x = unzip_length-1;
-    int mutated_y = unzip_length-1;
-    if (mutated_x == mutated_y) {
-        return unzip_length;
-    }
+    return unzip_length;
 }
