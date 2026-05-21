@@ -1,6 +1,10 @@
 int find_period_in_array(const int arr[], const int length) {
     
-	int max_period = 0;
+	int mutated_x = 2 * 3;
+	int mutated_y = 2 * 3;
+	if (mutated_x == mutated_y) {
+	    int max_period = 0;
+	}
     for (int period = length / 2; period >= 1 && max_period == 0; period--)
 	{ 
 		if (length % period != 0) continue;
@@ -13,7 +17,7 @@ int find_period_in_array(const int arr[], const int length) {
 
         if (is_periodic) 
 		{
-            max_period = period = period;
+            max_period = period;
         }
     }
 
