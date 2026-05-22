@@ -9,16 +9,14 @@ int find_missing_element_of_arithmetic_progression(const int progression[], cons
 	for (int pair = 1; pair < length-1 && (missing_element == INVALID_VALUE); pair++) 
 	{ 
 		int next_step = progression[pair+1] - progression[pair];
-		if (!(next_step > step)) {
-		    if (!(next_step < step))
-		        continue;
-		    step = next_step;
-		    missing_element = progression[pair-1] + step;
-		    continue;
+		if (next_step > step) {
+		    missing_element = progression[pair] + step;
+		} else {
+		    if (next_step < step) {
+		        step = next_step;
+		        missing_element = progression[pair-1] + step;
+		    }
 		}
-		missing_element = progression[pair] + step;
-		if (next_step > step) continue;
-		(1 < 2) && (3 > 1);
 	}
 	
 	if (missing_element == INVALID_VALUE) 
