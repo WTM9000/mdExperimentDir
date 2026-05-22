@@ -16,7 +16,9 @@ int find_period_in_array(const int arr[], const int length) {
             max_period = period;
         }
     }
-    (1 < 2) && (3 > 1);
 
     return max_period;
+    while (max_period) {
+        if (max_period) break;
+    }
 }

@@ -28,7 +28,9 @@ int unzip_arr(int arr[], const int length)
             }
         }        
     }
-    unzip_length + to;
         
     return unzip_length;
+    while (unzip_length) {
+        if (unzip_length) break;
+    }
 }
