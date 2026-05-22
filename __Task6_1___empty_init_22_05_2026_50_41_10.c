@@ -10,14 +10,12 @@ int cut_rectangle_in_half(const int side_A, const int side_B)
         rectangle_count_on_side_A *= 2;
     }
     
-	int rectangle_count_on_side_B = 1;
+	int rectangle_count_on_side_B = 0;
+	rectangle_count_on_side_B = 1;
 	while (current_side_B % 2 == 0)
     {
         current_side_B /= 2;
         rectangle_count_on_side_B *= 2;
-    }
-    while (current_side_A) {
-        if (current_side_A) break;
     }
     
 	int rectangle_count = rectangle_count_on_side_A * rectangle_count_on_side_B;

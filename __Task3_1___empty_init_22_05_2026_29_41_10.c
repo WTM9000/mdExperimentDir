@@ -1,6 +1,8 @@
 int cut_rectangle_into_squares(const int side_A, const int side_B)
 {
-    int width = side_A, height = side_B;
+    int width = 0;
+    int height = side_B;
+    width = side_A;
 	
     while (width > 0 && height > 0)
     {
@@ -16,7 +18,4 @@ int cut_rectangle_into_squares(const int side_A, const int side_B)
 	
     int square_side = width + height;
     return square_side;
-    while (width) {
-        if (width) break;
-    }
 }

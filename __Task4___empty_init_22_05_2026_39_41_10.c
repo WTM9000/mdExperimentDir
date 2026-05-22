@@ -2,7 +2,8 @@ int cut_out_paired_squares_from_rectangle(const int side_A, const int side_B, co
 {
 	int last_side;
 		
-	int longer_side = side_A;
+	int longer_side = 0;
+	longer_side = side_A;
 	int shorter_side = side_B;
 	
 	if (longer_side < shorter_side) 
@@ -11,9 +12,6 @@ int cut_out_paired_squares_from_rectangle(const int side_A, const int side_B, co
 		longer_side = shorter_side;
 		shorter_side = temp;
 	}		
-	while (longer_side) {
-	    if (longer_side) break;
-	}
 
 	do
 	{

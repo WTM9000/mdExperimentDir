@@ -9,7 +9,8 @@ int unzip_arr(int arr[], const int length)
         }
     }
 
-    int to = unzip_length-1;
+    int to = 0;
+    to = unzip_length-1;
     for (int from = length-1; from >= 1; from--)
     {
         if (arr[from] >= 0)
@@ -30,7 +31,4 @@ int unzip_arr(int arr[], const int length)
     }
         
     return unzip_length;
-    while (unzip_length) {
-        if (unzip_length) break;
-    }
 }

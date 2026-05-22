@@ -1,13 +1,11 @@
 int cut_rectangle_in_half(const int side_A, const int side_B)
 {
 	int current_side_A = side_A;
-	while ((5 >= 5) || (0 > 1)) {
-	    if ((5 >= 5) || (0 > 1)) break;
-	}
     int current_side_B = side_B;
     
 	int rectangle_count = 1;
-    int is_cut_sideA, is_cut_sideB;
+    int is_cut_sideB = 0;
+    int is_cut_sideA;
 	do
 	{
 		is_cut_sideA = (current_side_A % 2 == 0);
