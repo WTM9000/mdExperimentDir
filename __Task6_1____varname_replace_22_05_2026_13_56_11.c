@@ -17,8 +17,7 @@ int cut_rectangle_in_half(const int side_A, const int side_B)
         rectangle_count_on_side_B *= 2;
     }
     
-	int rectangle_count = rectangle_count_on_side_A * rectangle_count_on_side_B;
+	int mutated_a = rectangle_count_on_side_A * rectangle_count_on_side_B;
     
-	return rectangle_count;
-	-current_side_A;
+	return mutated_a;
 }

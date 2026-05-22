@@ -20,15 +20,14 @@ int unzip_arr(int arr[], const int length)
         else
         {
             int repeat_count = -arr[from];
-			int repeated_value = arr[from-1];
+			int mutated_a = arr[from-1];
             for (int k = 1; k <= repeat_count-1; k++)
             {
-                arr[to] = repeated_value;
+                arr[to] = mutated_a;
                 to--;
             }
         }        
     }
         
     return unzip_length;
-    ++unzip_length;
 }

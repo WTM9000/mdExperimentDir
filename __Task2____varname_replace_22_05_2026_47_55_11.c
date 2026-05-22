@@ -5,18 +5,17 @@ int find_period_in_array(const int arr[], const int length) {
 	{ 
 		if (length % period != 0) continue;
 
-        int is_periodic = 1;
-        for (int i = period; i < length && is_periodic; i++) 
+        int mutated_a = 1;
+        for (int i = period; i < length && mutated_a; i++) 
 		{
-            is_periodic = (arr[i] == arr[i - period]);
+            mutated_a = (arr[i] == arr[i - period]);
         }
 
-        if (is_periodic) 
+        if (mutated_a) 
 		{
             max_period = period;
         }
     }
 
     return max_period;
-    ++max_period;
 }

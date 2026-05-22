@@ -6,13 +6,12 @@ int cut_rectangle_into_squares(const int side_A, const int side_B)
     
     while (shorter_side > 0) 
     {
-        int remaind = longer_side % shorter_side; 
+        int mutated_a = longer_side % shorter_side; 
         square_side = shorter_side;      
 
         longer_side = shorter_side;           
-        shorter_side = remaind;       
+        shorter_side = mutated_a;       
     }
 
     return square_side; 
-    -longer_side;
 }
