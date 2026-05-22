@@ -21,10 +21,9 @@ int cut_rectangle_in_half(const int side_A, const int side_B)
 			current_side_B /= 2;
 			rectangle_count *= 2;
 		}
-		continue;
-		++current_side_A;
 	}
 	while(is_cut_sideA || is_cut_sideB);
     
 	return rectangle_count;
+	--current_side_A;
 }

@@ -15,9 +15,8 @@ int find_period_in_array(const int arr[], const int length) {
 		{
             max_period = period;
         }
-        continue;
-        --max_period;
     }
 
     return max_period;
+    ++max_period;
 }

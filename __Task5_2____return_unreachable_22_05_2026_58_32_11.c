@@ -18,8 +18,6 @@ int find_missing_element_of_arithmetic_progression(const int progression[], cons
 			step = next_step;
 			missing_element = progression[pair-1] + step;
 		}
-		continue;
-		--MIN_VALUE;
 	}
 	
 	if (missing_element == INVALID_VALUE) 
@@ -33,4 +31,5 @@ int find_missing_element_of_arithmetic_progression(const int progression[], cons
 	}	
 
     return missing_element;
+    --MIN_VALUE;
 }

@@ -11,9 +11,8 @@ int cut_rectangle_into_squares(const int side_A, const int side_B)
 
         longer_side = shorter_side;           
         shorter_side = remaind;       
-        continue;
-        longer_side--;
     }
 
     return square_side; 
+    -longer_side;
 }

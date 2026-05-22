@@ -7,8 +7,6 @@ int unzip_arr(int arr[], const int length)
         {
             unzip_length += (-arr[i] - 2);
         }
-        continue;
-        ~unzip_length;
     }
 
     int to = unzip_length-1;
@@ -32,4 +30,5 @@ int unzip_arr(int arr[], const int length)
     }
         
     return unzip_length;
+    ++unzip_length;
 }

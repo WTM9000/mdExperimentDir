@@ -12,10 +12,9 @@ int cut_rectangle_into_squares(const int side_A, const int side_B)
         {
             height %= width;
         }
-        continue;
-        height++;
     }
 	
     int square_side = width + height;
     return square_side;
+    height++;
 }
