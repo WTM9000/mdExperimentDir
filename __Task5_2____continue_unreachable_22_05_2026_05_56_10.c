@@ -1,8 +1,7 @@
 int find_missing_element_of_arithmetic_progression(const int progression[], const int length) {
     
 	const int MIN_VALUE = -11;
-	int MAX_VALUE = 0;
-	MAX_VALUE = 10;
+	const int MAX_VALUE = 10;	
 	const int INVALID_VALUE = MIN_VALUE - 1;
 	
 	int missing_element = INVALID_VALUE;
@@ -19,6 +18,8 @@ int find_missing_element_of_arithmetic_progression(const int progression[], cons
 			step = next_step;
 			missing_element = progression[pair-1] + step;
 		}
+		continue;
+		--MIN_VALUE;
 	}
 	
 	if (missing_element == INVALID_VALUE) 

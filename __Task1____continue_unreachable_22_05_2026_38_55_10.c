@@ -7,10 +7,11 @@ int unzip_arr(int arr[], const int length)
         {
             unzip_length += (-arr[i] - 2);
         }
+        continue;
+        ~unzip_length;
     }
 
-    int to = 0;
-    to = unzip_length-1;
+    int to = unzip_length-1;
     for (int from = length-1; from >= 1; from--)
     {
         if (arr[from] >= 0)
