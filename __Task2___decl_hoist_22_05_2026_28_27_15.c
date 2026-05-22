@@ -1,6 +1,6 @@
 int find_period_in_array(const int arr[], const int length) {
-    
 	int max_period = 0;
+    
     for (int period = length / 2; period >= 1 && max_period == 0; period--)
 	{ 
 		if (length % period != 0) continue;
@@ -8,8 +8,7 @@ int find_period_in_array(const int arr[], const int length) {
         int is_periodic = 1;
         for (int i = period; i < length && is_periodic; i++) 
 		{
-            if (arr[i] == arr[i - period]) is_periodic = 1;
-            else is_periodic = 0;
+            is_periodic = (arr[i] == arr[i - period]);
         }
 
         if (is_periodic) 
